@@ -1,8 +1,8 @@
 // Topic: Working with expressions
 //
 // Requirements:
-// * Print "its big" if a variable is > 100
-// * Print "its small" if a variable is <= 100
+// * Print "it's big" if a variable is > 100
+// * Print "it's small" if a variable is <= 100
 //
 // Notes:
 // * Use a boolean variable set to the result of
@@ -13,4 +13,3 @@
 //   to print
 
 fn main() {}
-
