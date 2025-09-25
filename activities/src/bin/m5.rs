@@ -64,3 +64,4 @@ mod test {
         sample_fn_large_max -> (255, Size::Large),
     );
 }
+

@@ -70,3 +70,4 @@ fn main() {
     print_pants_color(pants_color);
     print_shoes_color(shoes_color);
 }
+

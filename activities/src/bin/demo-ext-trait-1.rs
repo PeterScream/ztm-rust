@@ -22,3 +22,4 @@ fn main() {
     let even = number.is_even();
     println!("Is even: {}", even);
 }
+

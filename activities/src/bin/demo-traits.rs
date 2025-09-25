@@ -24,3 +24,4 @@ fn main() {
     fall(Vase);
     fall(Cat);
 }
+

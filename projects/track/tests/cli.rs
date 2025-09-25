@@ -84,3 +84,4 @@ fn reports_time_tracked() -> TestResult {
 
     Ok(())
 }
+

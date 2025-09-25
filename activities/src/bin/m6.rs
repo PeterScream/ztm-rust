@@ -47,3 +47,4 @@ fn main() {
     fnlog!(sample_fn_3(2, 2));
 }
 
+

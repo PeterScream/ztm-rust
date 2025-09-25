@@ -98,3 +98,4 @@ fn main() {
     let section_2 = config.get_section(section::section_2);
     dbg!(section_2);
 }
+

@@ -74,3 +74,4 @@ mod test {
         assert_eq!(last, vec![&3, &4, &5]);
     }
 }
+

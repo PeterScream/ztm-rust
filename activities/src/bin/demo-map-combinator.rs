@@ -19,3 +19,4 @@ fn main() {
 
     let word_length = maybe_word().map(|word| word.len());
 }
+

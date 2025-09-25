@@ -17,3 +17,4 @@ mod tests {
         assert_eq!(result, expected, "string should be all uppercase");
     }
 }
+

@@ -10,3 +10,4 @@ fn main() {
     let a_or_else = a.or(Some(5));
     let unwrapped = a.unwrap_or(0);
 }
+

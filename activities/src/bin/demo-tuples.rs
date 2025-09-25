@@ -14,3 +14,4 @@ fn main() {
     let state = favorites.2;
     let place = favorites.5;
 }
+

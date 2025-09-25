@@ -81,3 +81,4 @@ mod tests {
         assert!(duration >= Duration::from_millis(20));
     }
 }
+

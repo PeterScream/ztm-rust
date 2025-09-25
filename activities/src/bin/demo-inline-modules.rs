@@ -25,3 +25,4 @@ fn main() {
     greet::goodbye();
     math::add(1, 1);
 }
+

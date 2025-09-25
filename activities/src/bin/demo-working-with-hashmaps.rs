@@ -32,3 +32,4 @@ fn main() {
         println!("number: {locker_number:?}, content: {content:?}");
     }
 }
+

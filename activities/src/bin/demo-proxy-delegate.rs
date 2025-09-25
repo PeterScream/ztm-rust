@@ -76,3 +76,4 @@ fn main() {
     print_message(&messenger, "hello".to_string());
     print_message(&messenger, "goodbye".to_string());
 }
+

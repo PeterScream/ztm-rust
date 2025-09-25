@@ -8,3 +8,4 @@ pub fn mul(lhs: isize, rhs: isize) -> isize {
     lhs * rhs
 }
 
+

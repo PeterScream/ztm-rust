@@ -29,3 +29,4 @@ fn print_color(my_color: Color) {
 fn main() {
     print_color(Color::Blue);
 }
+

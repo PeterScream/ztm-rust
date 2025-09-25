@@ -15,3 +15,4 @@ fn main() {
     let rem = 6 % 3;
     let rem2 = 6 % 4;
 }
+

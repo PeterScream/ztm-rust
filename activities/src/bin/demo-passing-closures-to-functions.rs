@@ -14,3 +14,4 @@ fn main() {
     println!("{}", math(2, 2, sub));
     println!("{}", math(2, 2, mul));
 }
+

@@ -62,3 +62,4 @@ fn main() {
     println!("{:?}", red_truck);
     println!("{:?}", blue_car);
 }
+

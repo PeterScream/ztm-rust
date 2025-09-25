@@ -32,6 +32,7 @@
 #![allow(dead_code)]
 #![allow(clippy::enum_variant_names)]
 #![allow(clippy::println_empty_string)]
+#![allow(clippy::question_mark)]
 
 use std::collections::HashMap;
 use std::io;

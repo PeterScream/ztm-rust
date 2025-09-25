@@ -46,3 +46,4 @@ fn main() {
     print_guest_priority(vip);
 }
 
+

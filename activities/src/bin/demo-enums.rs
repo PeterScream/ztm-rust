@@ -14,3 +14,4 @@ fn main() {
         Direction::Up => println!("go up"),
     }
 }
+

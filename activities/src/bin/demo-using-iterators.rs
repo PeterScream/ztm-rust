@@ -31,3 +31,4 @@ fn main() {
 
     let take: Vec<&i32> = numbers.iter().take(3).collect();
 }
+

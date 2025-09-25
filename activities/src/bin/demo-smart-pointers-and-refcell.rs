@@ -27,3 +27,4 @@ fn main() {
     assert_eq!(truck.0.borrow().quantity, 4);
     assert_eq!(dispatch.0.borrow().quantity, 4);
 }
+

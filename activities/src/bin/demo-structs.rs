@@ -12,3 +12,4 @@ fn main() {
     println!("stock: {:?}", cereal.stock);
     println!("price: {:?}", cereal.price);
 }
+

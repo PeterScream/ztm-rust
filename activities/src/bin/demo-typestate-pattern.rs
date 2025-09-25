@@ -64,3 +64,4 @@ fn main() {
         Err(failed) => println!("training failed, score: {}", failed.state.score),
     }
 }
+

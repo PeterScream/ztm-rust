@@ -169,3 +169,4 @@ fn main() {
     let jobs_completed = job_counter.lock();
     println!("Jobs completed: {}", jobs_completed);
 }
+

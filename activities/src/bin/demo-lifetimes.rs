@@ -80,3 +80,4 @@ fn main() {
     let foovillians = young.living_in_fooville();
     println!("{:?}", foovillians);
 }
+

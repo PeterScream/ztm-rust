@@ -126,3 +126,4 @@ fn lockfile_path(args: &Cli) -> Result<PathBuf, CliError> {
         }
     }
 }
+

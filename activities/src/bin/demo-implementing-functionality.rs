@@ -26,3 +26,4 @@ fn main() {
     let boiling = Temperature::boiling();
     boiling.show_temp();
 }
+

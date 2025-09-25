@@ -52,3 +52,4 @@ fn main() {
     process_item(cargo1);
     process_item(cargo2);
 }
+

@@ -20,3 +20,4 @@ impl Default for Package {
 fn main() {
     let p = Package::default();
 }
+

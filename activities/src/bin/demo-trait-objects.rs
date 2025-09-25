@@ -38,3 +38,4 @@ fn main() {
     let revenue = calculate_revenue(&sales);
     println!("total revenue = {revenue}");
 }
+

@@ -41,3 +41,4 @@ fn main() {
         println!("Name: '{}'; Title: '{}'", name, title);
     }
 }
+

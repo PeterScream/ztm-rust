@@ -67,3 +67,4 @@ mod test {
         assert_eq!(result, expected, "should be placed immediately adjacent");
     }
 }
+

@@ -140,3 +140,4 @@ mod generics {
 }
 
 fn main() {}
+

@@ -50,3 +50,4 @@ fn main() {
         println!("{:?}: {:?}", fruit, stock);
     }
 }
+

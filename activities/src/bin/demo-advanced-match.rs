@@ -33,3 +33,4 @@ fn main() {
         Ticket { price, .. } => println!("price = {price}"),
     }
 }
+

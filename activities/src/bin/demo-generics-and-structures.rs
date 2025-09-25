@@ -64,3 +64,4 @@ fn main() {
     // ERROR: 5 doesn't implement Convey
     // belt.add(5);
 }
+

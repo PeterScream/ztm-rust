@@ -132,3 +132,4 @@ mod tests {
         assert_eq!(max, Some(20.0));
     }
 }
+

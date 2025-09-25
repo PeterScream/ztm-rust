@@ -41,7 +41,7 @@ where
         //
         // No additional edits need to be made to the `User` struct. Any new implementers of
         // `IdentifyUser` will also automatically be able to authenticate
-        self.get_user_id() % 2 == 0
+        self.get_user_id().is_multiple_of(2)
     }
 }
 
@@ -54,4 +54,5 @@ fn main() {
     println!("Power User ID: {}", user.get_user_id());
     println!("Power User Authenticated: {}", user.authenticate());
 }
+//
 //

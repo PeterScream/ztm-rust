@@ -39,3 +39,4 @@ mod tests {
         assert_eq!(&text, "00:00:05");
     }
 }
+

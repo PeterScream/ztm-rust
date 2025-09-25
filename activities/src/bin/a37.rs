@@ -22,6 +22,7 @@
 // * Utilize the `thiserror` crate for your error type
 // * Run `cargo test --bin a37` to test your implementation
 
+#![allow(dead_code)]
 use std::convert::TryFrom;
 use thiserror::Error;
 
@@ -114,4 +115,3 @@ mod test {
         );
     }
 }
-
