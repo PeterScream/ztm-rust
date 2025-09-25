@@ -27,3 +27,4 @@ fn main() {
     change_data(Arc::clone(&display_data), "goodbye");
     thread::sleep(Duration::from_millis(500));
 }
+

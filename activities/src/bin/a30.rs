@@ -20,3 +20,4 @@ trait Color {}
 
 fn main() {}
 
+

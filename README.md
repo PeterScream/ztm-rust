@@ -10,3 +10,4 @@ To work on projects, open up your editor/IDE to the specific project subdirector
 ## Solutions
 To view solutions, checkout the `solutions` branch by running `git checkout solutions` after cloning this repo. Solutions are included for all activities, demo files, and projects.
 
+

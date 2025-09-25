@@ -7,3 +7,4 @@ fn maybe_word() -> Option<String> {
 }
 
 fn main() {}
+

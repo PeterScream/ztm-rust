@@ -30,3 +30,4 @@ fn use_pass(pass: &mut SubwayPass, cost: isize) -> Result<(), PassError> {
 }
 
 fn main() {}
+

@@ -3,3 +3,4 @@ pub trait Printer {
 }
 
 fn main() {}
+

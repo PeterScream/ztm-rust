@@ -21,3 +21,4 @@ fn main() {
 
     let mut store = FruitStand { fruit };
 }
+
