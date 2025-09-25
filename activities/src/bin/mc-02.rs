@@ -6,16 +6,17 @@
 //   inventory of an item gets low.
 //
 // Requirements:
-// - Create a proxy structure named `InventoryAlerter` around `BasicInventory` that
-//   prints a message whenever the quantity of an item reaches or falls below a threshold
+// - Create a proxy structure named `InventoryAlerter` around `BasicInventory` that prints a
+//   message whenever the quantity of an item reaches or falls below a set threshold.
 //   - The threshold should be specified per-item
+//   - The default threshold is 50 items.
 //   - The message should be `Low quantity of {item}: {amount}`
 //   - Implement a method named `set_alert_threshold` on the `InventoryAlerter` to set
 //     the alert threshold per item
 // - Update the main function to use the `InventoryAlerter`
 // - When implemented correctly, you should get 2 alerts:
 //     low quantity of apple: 50
-//     low quantity of cilantro: 55
+//     low quantity of cilantro: 54
 
 use std::collections::HashMap;
 
@@ -114,17 +115,17 @@ fn main() {
      * alerts printed to the terminal.
      **********************************************************************************************/
 
-    // should have an alert
+    // should have an alert: at or below default threshold of 50
     inventory.update_quantity("apple", 50);
 
-    // no alert
+    // no alert: above default threshold of 50
     inventory.update_quantity("tomato", 120);
-    // no alert
+    // no alert: above default threshold of 50
     inventory.update_quantity("cilantro", 60);
 
     // change the threshold for cilantro
     inventory.set_alert_threshold("cilantro", 55);
 
-    // should have an alert
+    // should have an alert: 60-6 = 54 cilantro which is below the new threshold of 55
     change_quantity(&mut inventory, "cilantro", -6);
 }
