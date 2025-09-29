@@ -9,7 +9,19 @@
 // * The function must use the enum as a parameter
 // * Use a match expression to determine which color
 //   name to print
+enum ColourList {
+    Black,
+    White,
+    Red,
+    Purpule,
+}
 
-fn main() {}
-
-
+fn main() {
+    let colour_select = ColourList::Black;
+    match colour_select {
+        ColourList::Black => println!(" colour is: black"),
+        ColourList::White => println!(" colour is: white"),
+        ColourList::Red => println!(" colour is: red"),
+        ColourList::Purpule => println!(" colour is: purpule"),
+    }
+}

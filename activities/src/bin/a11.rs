@@ -10,5 +10,3 @@
 // * Create a function to display the id number, with the struct as a parameter
 
 fn main() {}
-
-

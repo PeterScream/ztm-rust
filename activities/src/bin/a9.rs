@@ -10,5 +10,3 @@
 // * Use an if..else if..else block to determine what to print
 
 fn main() {}
-
-
