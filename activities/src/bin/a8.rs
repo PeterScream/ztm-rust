@@ -1,57 +1,39 @@
-// Topic: Organizing similar data using structs
-//
-// Requirements:
-// * Print the flavor of a drink and it's fluid milileters
-//
-// Notes:
-// * Use an enum to create different flavors of drinks
-// * Use a struct to store drink flavor and fluid ounce information
-// * Use a function to print out the drink flavor and ounces
-// * Use a match expression to print the drink flavor
-
-
-enum EnumFlavor {
-    Sparkling, 
+enum Flavor {
+    Sparkling,
     Sweet,
     Fruity,
-} 
-
-struct StrDrink {
-  flavor: EnumFlavor,
-  fluid_mil: f64,
 }
 
-fn print_drink(drink: StrDrink){
-    match drink.flavor {
-        EnumFlavor::Sparkling => print!("flavor: Sparkling"),
-        EnumFlavor::Sweet => print!("flavor: Sweet"),
-        EnumFlavor::Fruity => print!("flavor: Fruity"),
-    }
-    println!("oz: {:?}", drink.fluid_mil);
+struct Drink {
+    drink_flavor: Flavor,  // Descriptive field from original Option 2
+    fluid_ml: f64,
+}
 
+fn print_drink(beverage: Drink) {  // Parameter renamed for clarity
+    match beverage.drink_flavor {  // Use the new parameter name
+        Flavor::Sparkling => print!("flavor: sparkling"),
+        Flavor::Sweet => print!("flavor: sweet"),
+        Flavor::Fruity => print!("flavor: fruity"),
+    }
+    println!("ml: {:.1}", beverage.fluid_ml);
 }
 
 fn main() {
-
-    let sparkling_drink = StrDrink {
-        flavor: EnumFlavor::Sparkling,
-        fluid_mil: 6.0
+    let sparkling_drink = Drink {
+        drink_flavor: Flavor::Sparkling,
+        fluid_ml: 6.0,
     };
-    print_drink(sparkling_drink);
-   
-    let sweet_drink = StrDrink {
-        flavor: EnumFlavor::Sweet,
-        fluid_mil: 6.0
+    print_drink(sparkling_drink);  // Caller unchanged
+
+    let sweet_drink = Drink {
+        drink_flavor: Flavor::Sweet,
+        fluid_ml: 10.0,
     };
     print_drink(sweet_drink);
 
-    let fruity_drink = StrDrink {
-        flavor: EnumFlavor::Fruity,
-        fluid_mil: 6.0
+    let fruity_drink = Drink {
+        drink_flavor: Flavor::Fruity,
+        fluid_ml: 12.0,
     };
     print_drink(fruity_drink);
-
-    
-
-
 }
