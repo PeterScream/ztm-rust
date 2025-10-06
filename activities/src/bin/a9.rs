@@ -9,12 +9,10 @@
 // * Destructure the return value into two variables
 // * Use an if..else if..else block to determine what to print
 
-fn coordinate() -> (i32, i32){
-    (1,7)
+fn coordinate() -> (i32, i32) {
+    (1, 7)
 }
 
 fn main() {
-
-    let (x,y) = coordinate();
-
+    let (x, y) = coordinate();
 }

@@ -9,4 +9,18 @@
 // * Print the variable within the loop statement
 // * Use break to exit the loop
 
-fn main() {}
+fn main() {
+
+    let mut var :i8 = 1;
+    loop {
+
+        var = var +1;
+
+        println!("current var {:?}",var);
+        if var == 4 {
+         break;
+        }
+    }
+    
+
+}

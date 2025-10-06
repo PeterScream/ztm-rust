@@ -5,7 +5,7 @@
 //
 // Notes:
 // * Use a struct for the grocery item
-struct GroceryItem{
+struct GroceryItem {
     // * Use two i32 fields for the quantity and id number
     quantity: i32,
     id: i32,
@@ -20,7 +20,6 @@ fn display_id(item: &GroceryItem) {
     println!("id: {:?}", item.id);
 }
 
-
 fn main() {
     let new_item = GroceryItem {
         quantity: 3,
@@ -28,6 +27,4 @@ fn main() {
     };
     display_quantity(&new_item);
     display_id(&new_item);
-
-
 }
