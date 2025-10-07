@@ -24,7 +24,23 @@ impl Rectangle{
     fn area(&self)-> u32 {
         self.width * self.height
     }
+
+    fn can_hold(&self, other: &Rectangle) -> bool {
+        self.width > other.width && self.height > other.height
+    }
 }
+
+
+/*
+The square function on line 34 can't use &self because it's an associated function
+(also called a "static method" in other languages), not a method.
+*/
+impl Rectangle { 
+    fn square(size: u32) -> Rectangle {
+        Rectangle { width: (size), height: (size) }
+    }
+}
+
 
 /*  (3)
     fn area(rectangle: &Rectangle) -> u32 {
@@ -46,17 +62,31 @@ fn main() {
         height: 50
     }; 
 
+    let rect1: Rectangle =  Rectangle {  
+        width: 21,                    
+        height: 25
+    }; 
+    let rect2: Rectangle =  Rectangle {  
+        width: 80,                    
+        height: 90
+    }; 
+    let rect3= Rectangle::square(25);
+
+
+
     /* (3)
         println!(
             "\n The area of the rectangle is {} square pixels.", area(&rect)
         );
     */
 
-
     println!(
         "\n The area of the rectangle is {} square pixels.", rect.area()
     );
     
     println!("\n rect: {:#?}", rect);  // '\n' (new line before the string)
+
+    println!("rect can hold rect1: {}", rect.can_hold(&rect1));
+    println!("rect can hold rect2: {}", rect.can_hold(&rect2));
 
 } 
